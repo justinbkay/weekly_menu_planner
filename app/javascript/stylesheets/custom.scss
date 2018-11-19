@@ -1,4 +1,5 @@
 $white: #FFF;
+$blue: #0013c0;
 
 html {
   min-height: 100%;
@@ -6,6 +7,21 @@ html {
   body {
     font-family: 'avenir next', avenir, sans-serif;
     min-height: 100%;
+    header {
+      a, a:visited {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+    a, a:visited {
+      color: $blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
 
     .notice-wrapper, .alert-wrapper {
       position: absolute;

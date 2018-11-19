@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notice.style.opacity -= 0.1;
         } else {
             clearInterval(fadeEffect);
+            notice.parentNode.removeChild(notice);
         }
       }, 30);
     }
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             alert.style.opacity -= 0.1;
         } else {
             clearInterval(fadeEffect);
+            alert.parentNode.removeChild(alert);
         }
       }, 30);
     }
