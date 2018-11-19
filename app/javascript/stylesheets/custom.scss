@@ -1,3 +1,34 @@
-body {
-  font-family: 'avenir next', avenir, sans-serif;
+$white: #FFF;
+
+html {
+  min-height: 100%;
+
+  body {
+    font-family: 'avenir next', avenir, sans-serif;
+    min-height: 100%;
+
+    .notice-wrapper, .alert-wrapper {
+      position: absolute;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      p {
+        padding: 2.5rem 0;
+        text-align: center;
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $white;
+        letter-spacing: 1px;
+      }
+    }
+
+    .notice-wrapper {
+      background: rgba(135, 216, 211, 0.85);
+    }
+
+    .alert-wrapper {
+      background: rgba(216, 135, 135, 0.85);
+    }
+  }
 }
