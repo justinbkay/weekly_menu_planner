@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="flex">
+      <div class="w-20">
+        left
+      </div>
+      <div class="w-80">
+        <%= yield %>
+        center
+      </div>
+      <div class="w-20">
+        right
+      </div>
+    </div>
   </body>
 </html>
