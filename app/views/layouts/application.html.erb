@@ -29,7 +29,12 @@
             </div>
             <% unless current_user %>
               <div class="dtc v-mid tr pa3">
-                <%= link_to "Sign Up", new_registration_path(resource_name), class: 'f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba' %>
+                <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+                  <%= link_to "Sign up", new_registration_path(resource_name), class: 'f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba' %>
+                <% end %>
+                <%- if controller_name != 'sessions' %>
+                  <%= link_to "Log in", new_session_path(resource_name), class: 'f6 fw4 hover-white no-underline white-70 dib ml2 pv2 ph3 ba' %>
+                <% end %>
               </div>
             <% end %>
           </nav>
