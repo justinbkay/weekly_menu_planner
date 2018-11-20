@@ -163,6 +163,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.20.3)
     thread_safe (0.3.6)
+    trix-rails (2.0.0)
+      rails (> 4.1, < 6.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     warden (1.2.8)
@@ -196,6 +198,7 @@ DEPENDENCIES
   rspec-rails
   spring
   spring-watcher-listen (~> 2.0.0)
+  trix-rails
   web-console (>= 3.3.0)
   webpacker
 
