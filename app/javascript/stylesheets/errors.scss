@@ -1,0 +1,35 @@
+.field_with_errors {
+  // padding: 2px;
+  label {
+    color: red;
+  }
+  input {
+    border: 1px solid red;
+  }
+}
+
+div#error_explanation {
+  width: 80%;
+  margin: auto;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5px 5px 5px 15px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+  }
+  p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+  ul li {
+    list-style: none;
+  }
+}
