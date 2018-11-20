@@ -1,0 +1,21 @@
+<%= form_for [current_user, @recipe] do |f| %>
+  <p>
+    <%= f.label :name, class: 'f4' %><br>
+    <%= f.text_field :name, autofocus: true, size: '35' %>
+  </p>
+  <p>
+    <%= f.label :description, class: 'f4' %><br>
+    <%= f.trix_editor :description %>
+  </p>
+  <p>
+    <%= f.label :ingredients, class: 'f4' %><br>
+    <%= f.trix_editor :ingredients %>
+  </p>
+  <p>
+    <%= f.label :steps, class: 'f4' %><br>
+    <%= f.trix_editor :steps %>
+  </p>
+  <p>
+    <%= f.submit :save, class: 'bw0 br2 bg-blue pa2 white fw5 tc ttc tracked' %>
+  </p>
+<% end %>
