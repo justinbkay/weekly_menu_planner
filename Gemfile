@@ -35,7 +35,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
-gem 'factory_bot', group: [:test]
+gem 'factory_bot_rails', group: [:test, :development]
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
