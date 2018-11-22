@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2018_11_22_160426) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["recipe_id"], name: "index_meals_on_recipe_id"
+    t.index ["user_id", "cal_date", "type"], name: "index_meals_on_user_id_and_cal_date_and_type", unique: true
     t.index ["user_id"], name: "index_meals_on_user_id"
   end
 

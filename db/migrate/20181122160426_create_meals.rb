@@ -8,5 +8,6 @@ class CreateMeals < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_index(:meals, [:user_id, :cal_date, :type], unique: true)
   end
 end
