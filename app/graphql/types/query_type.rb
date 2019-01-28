@@ -1,13 +1,20 @@
-module Types
-  class QueryType < Types::BaseObject
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
+class QueryType < GraphQL::Schema::Object
+  description "The query root of this schema"
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
-    end
+  field :recipe, RecipeType, null: true do
+    description 'Find a recipe by ID'
+    argument :id, ID, required: true
+  end
+
+  field :recipes, RecipeType, null: true do
+    description 'Find all recipes'
+  end
+
+  def recipe(id:)
+    Recipe.find(id)
+  end
+
+  def recipes
+    Recipe.all
   end
 end
