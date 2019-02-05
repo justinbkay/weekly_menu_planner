@@ -14,6 +14,7 @@
     "rails-ujs": "^5.2.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-on-rails": "11.2.2",
     "rxjs": "^6.3.3",
     "trix": "^1.0.0",
     "ts-loader": "3.5.0",
